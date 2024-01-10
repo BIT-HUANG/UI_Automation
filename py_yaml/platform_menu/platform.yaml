@@ -1,0 +1,66 @@
+move_to_purchase_menu:
+  - action: move_to_ele
+    locator: [ "XPATH", '//span[text()="采购"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+move_shopping_cart_and_click:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="愿望清单"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+click_platform_avatar:
+  - action: find_and_click
+    locator: [ "XPATH", '//div[@class="avatar"]' ]
+    index: ~
+    text: ~
+    sleep: 2
+click_change_to_organization_316:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="北京滴滴出行科技有限公司"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+move_change_organization_ele:
+  - action: move_to_ele
+    locator: [ "XPATH", '//div[@class="change-organization"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+get_platform_page_organization_name:
+  - action: find
+    locator: [ "XPATH", '//div[text()="北京滴滴出行科技有限公司"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+click_change_to_platform:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="苏州火山湖智能科技有限公司1"]' ]
+    index: ~
+    text: ~
+    sleep: 2
+move_to_sell_menu:
+  - action: move_to_ele
+    locator: [ "XPATH", '//span[text()="销售"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+move_to_new_order_menu_and_click:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="新建订单"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+move_to_design_design_menu:
+  - action: move_to_ele
+    locator: [ "XPATH", '//span[text()="设计"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+click_public_library_list:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="公库列表"]' ]
+    index: ~
+    text: ~
+    sleep: 1

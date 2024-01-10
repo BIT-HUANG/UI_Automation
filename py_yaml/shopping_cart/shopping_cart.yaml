@@ -1,0 +1,60 @@
+click_select_all:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[@class="ant-checkbox"]']
+    index: ~
+    text: ~
+    sleep: 1
+click_go_to_result:
+  - action: find_and_click
+    locator: [ "XPATH", '//button[@class="ant-btn ant-btn-primary ml-4"]']
+    index: ~
+    text: ~
+    sleep: 1
+get_selected_quantity:
+  - action: find
+    locator: [ "XPATH", '//label[@class="ant-checkbox-wrapper ant-checkbox-wrapper-checked"]/following-sibling::span' ]
+    index: ~
+    text: ~
+    sleep: 1
+click_cabinet_select_side_sliding_page:
+  - action: find_and_click
+    locator: [ "XPATH", '//a[text()="添加机柜"]' ]
+    index: ~
+    text: ~
+    sleep: 3
+click_side_sliding_page_add_go_shopping:
+  - action: find_and_click
+    locator: [ "XPATH", '//div[text()="添加"]' ]
+    index: ~
+    text: ~
+    sleep: 3
+get_add_shopping_cart_success_message:
+  - action: find
+    locator: [ "XPATH", '//span[text()="操作成功"]' ]
+    index: 0
+    text: ~
+    sleep: 2
+scroll_side_sliding_down:
+  - action: scroll_page
+    locator: ~
+    index: [0,500]
+    text: ~
+    sleep: 1
+move_by_offset_to_side_sliding:
+  - action: move_by_offset
+    locator: ~
+    index: [1500,0]
+    text: ~
+    sleep: 1
+move_and_click_in_windows:
+  - action: windows_move_and_click
+    locator: ~
+    index: [2000,500]
+    text: ~
+    sleep: 1
+scroll_page_in_windows:
+  - action: windows_scroll_page
+    locator: ~
+    index: [10]
+    text: ~
+    sleep: 1

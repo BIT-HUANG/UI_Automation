@@ -1,0 +1,95 @@
+use_right_account_pwd_login_go_home_page:
+  - action: find_and_click
+    locator: ["XPATH", '//span[text()="账号登录"]']
+    index: ~
+    text: ~
+    sleep: ~
+  - action: find_and_send
+    locator: ["XPATH", '//input[@id="form_item_userName"]']
+    index: ~
+    text: "wuchengping@skycoresaas.com"
+    sleep: ~
+  - action: find_and_send
+    locator: ["XPATH", '//input[@id="form_item_password"]']
+    index: ~
+    text: "123456"
+    sleep: ~
+  - action: find_and_click
+    locator: ["XPATH", '//label[@class="ant-checkbox-wrapper"]/span[@class="ant-checkbox"]']
+    index: ~
+    text: ~
+    sleep: ~
+  - action: find_and_click
+    locator: ["XPATH", '//button[@class="ant-btn ant-btn-primary mt-4 w-full h-14"]']
+    index: ~
+    text: ~
+    sleep: 3
+click_forgot_password:
+  - action: find_and_click
+    locator: ["XPATH", '//span[text()="账号登录"]']
+    index: ~
+    text: ~
+    sleep: ~
+  - action: find_and_click
+    locator: [ "XPATH", ' //a[text()="忘记密码"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+reset_passwords:
+  - action: find_and_send
+    locator: [ "XPATH", '//input[@placeholder="请输入手机号"]' ]
+    index: ~
+    text: $phone
+    sleep: 1
+  - action: find_and_send
+    locator: [ "XPATH", '//input[@placeholder="请输入验证码"]' ]
+    index: ~
+    text: 123456
+    sleep: 1
+  - action: find_and_send
+    locator: [ "XPATH", '//input[@placeholder="设置新密码(8-20个字,包含字母和数字)"]' ]
+    index: ~
+    text: 123456
+    sleep: 1
+  - action: find_and_send
+    locator: [ "XPATH", '//input[@placeholder="确认密码(8-20个字,包含字母和数字)"]' ]
+    index: ~
+    text: 123456
+    sleep: 1
+  - action: find_and_click
+    locator: [ "XPATH", '//button[@class="ant-btn ant-btn-primary mt-8 w-full h-14"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+get_reset_passwords_message:
+  - action: find
+    locator: [ "XPATH", '//span[text()="操作成功"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+#use_right_account_pwd_login_go_platform_menu_page:
+#  - action: find_and_click
+#    locator: ["XPATH", '//span[text()="账号登录"]']
+#    index: ~
+#    text: ~
+#    sleep: ~
+#  - action: find_and_send
+#    locator: ["XPATH", '//input[@id="form_item_userName"]']
+#    index: ~
+#    text: "wuchengping@skycoresaas.com"
+#    sleep: ~
+#  - action: find_and_send
+#    locator: ["XPATH", '//input[@id="form_item_password"]']
+#    index: ~
+#    text: "123456"
+#    sleep: ~
+#  - action: find_and_click
+#    locator: ["XPATH", '//label[@class="ant-checkbox-wrapper"]/span[@class="ant-checkbox"]']
+#    index: ~
+#    text: ~
+#    sleep: ~
+#  - action: find_and_click
+#    locator: ["XPATH", '//button[@class="ant-btn ant-btn-primary mt-4 w-full h-14"]']
+#    index: ~
+#    text: ~
+#    sleep: 3

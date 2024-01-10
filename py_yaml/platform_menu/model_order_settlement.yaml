@@ -1,0 +1,16 @@
+click_fire_coin_payment:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="立即支付"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: find_and_send
+    locator: [ "XPATH", '//input[@id="form_item_password"]' ]
+    index: ~
+    text: 741852
+    sleep: 1
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="确 定"]' ]
+    index: ~
+    text: ~
+    sleep: 1

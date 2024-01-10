@@ -1,0 +1,12 @@
+click_category_of_connecting_terminal:
+  - action: find_and_click
+    locator: [ "XPATH", '//div[text()="接线端子"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+click_category_of_connecting_terminal_and_place_order:
+  - action: finds_and_click
+    locator: [ "XPATH", '//span[text()="下单"]' ]
+    index: 0
+    text: ~
+    sleep: 1

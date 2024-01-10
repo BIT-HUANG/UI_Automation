@@ -1,0 +1,48 @@
+get_payment_page_title_ele:
+  - action: find
+    locator: [ "XPATH", '//div[text()="支付页面 "]' ]
+    index: ~
+    text: ~
+    sleep: 2
+click_and_input_money:
+  - action: find_and_send
+    locator: [ "XPATH", '//input[@id="form_item_amountValue"]' ]
+    index: ~
+    text: 99
+    sleep: 2
+click_balance_button_pay:
+  - action: find_and_click
+    locator: [ "XPATH", '//label[@class="ant-radio-button-wrapper ant-radio-button-wrapper-checked nameButton"]' ]
+    index: ~
+    text: ~
+    sleep: 3
+click_immediate_payment:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="立即支付"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+input_payment_password:
+  - action: find_and_send
+    locator: [ "XPATH", '//input[@id="form_item_password"]' ]
+    index: ~
+    text: 741852
+    sleep: 1
+click_payment_confirm_button:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="确 定"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+get_payment_success_message:
+  - action: find
+    locator: [ "XPATH", '//h3[text()="订单支付成功"]' ]
+    index: ~
+    text: ~
+    sleep: 3
+click_send_money_box:
+  - action: find_and_click
+    locator: [ "XPATH", '//input[@id="form_item_amountValue"]' ]
+    index: ~
+    text: ~
+    sleep: 1

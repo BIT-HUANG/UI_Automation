@@ -1,0 +1,9 @@
+send_email:
+  mail_host: 'smtp.qq.com'
+  mail_user: '1034099818'
+  mail_key: "tochiljtvpucbbcb"
+  mail_send: '1034099818@qq.com'
+  receivers: ["cp18146712142@163.com", "wuchengping@skycoresaas.com "]
+pytest_allure_cmd:
+  pytest_cdm: 'pytest -vs --alluredir=./allure-data/  --clean-alluredir'
+  allure_cdm: 'allure generate ./allure-data/ -o ./allure-report/ --clean'

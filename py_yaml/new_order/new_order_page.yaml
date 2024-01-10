@@ -1,0 +1,65 @@
+send_customer_name_and_select_customer:
+  - action: find_and_send
+    locator: [ "CSS", 'span.ant-select-selection-search input.ant-select-selection-search-input' ]
+    index: ~
+    text: '北京滴滴出行科技有限公司'
+    sleep: 1
+  - action: find_and_click
+    locator: [ "xpath", '//div[text()="北京滴滴出行科技有限公司 - 吴吴吴 - 18146712142"]' ]
+    index: ~
+    text: '北京滴滴出行科技有限公司'
+    sleep: 1
+click_add_cabinet_goto_cabinet_slide_page:
+  - action: find_and_click
+    locator: [ "xpath", '//span[text()="添加机柜"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+choose_all_select_box:
+  - action: find_and_click
+    locator: [ "xpath", '//span[text()="全选"]/parent::label' ]
+    index: ~
+    text: ~
+    sleep: 1
+click_VAT_ordinary_invoice_button:
+  - action: find_and_click
+    locator: [ "xpath", '//a[text()="新增发票信息"]/parent::*/parent::div//label[@class="ant-radio-button-wrapper"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+send_total_discount_amount:
+  - action: find_and_send
+    locator: [ "xpath", '//span[text()="整单优惠金额(元)"]/following-sibling::*//input' ]
+    index: ~
+    text: 200
+    sleep: 1
+click_submit_order_button:
+  - action: find_and_click
+    locator: [ "xpath", '//span[text()="提交订单"]' ]
+    index: ~
+    text: 200
+    sleep: 1
+move_by_offset_to_side_sliding:
+  - action: move_by_offset
+    locator: ~
+    index: [1500,0]
+    text: ~
+    sleep: 1
+scroll_side_sliding_down:
+  - action: scroll_page
+    locator: ~
+    index: [0,500]
+    text: ~
+    sleep: 1
+click_side_sliding_page_add_go_shopping:
+  - action: find_and_click
+    locator: [ "XPATH", '//div[text()="添加"]' ]
+    index: ~
+    text: ~
+    sleep: 2
+click_close_side_sliding:
+  - action: find_and_click
+    locator: [ "XPATH", '//button[@aria-label="Close"]' ]
+    index: ~
+    text: ~
+    sleep: 1

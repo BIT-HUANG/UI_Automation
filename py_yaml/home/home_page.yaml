@@ -1,0 +1,62 @@
+move_to_ele_skycoresaas_shop_and_click_cabinet_series_add_cabinet_in_shop:
+  - action: move_to_ele
+    locator: ['XPATH','//a[text()="火山湖商城"]']
+    index: ~
+    text: ~
+    sleep: ~
+  - action: find_and_click
+    locator: ['XPATH','//a[text()="机柜系列"]']
+    index: ~
+    text: ~
+    sleep: ~
+  - action: find_and_click
+    locator: ['XPATH','//div[contains(@title,"经济型HP机柜")]/following-sibling::div/button']
+    index: ~
+    text: ~
+    sleep: 1
+  - action: find_and_click
+    locator: [ 'XPATH','//div[text()="104HB"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: find_and_click
+    locator: [ 'XPATH','//div[text()="添加至愿望清单"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+get_user_name_ele:
+  - action: find
+    locator: [ 'XPATH','//span[text()="承少"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+click_home_page_login:
+  - action: find_and_click
+    locator: [ 'XPATH','//a[text()="登录"]' ]
+    index: ~
+    text: ~
+    sleep: 2
+click_add_shop_cart:
+  - action: find_and_click
+    locator: [ 'XPATH','//div[text()="添加至愿望清单"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+get_success_click_add_shop_cart_message:
+  - action: find
+    locator: [ 'XPATH','//span[text()="操作成功"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+move_to_username_button:
+  - action: move_to_ele
+    locator: [ 'XPATH','//a[@class="user"]']
+    index: ~
+    text: ~
+    sleep: 1
+click_access_platform:
+  - action: find_and_click
+    locator: [ 'XPATH','//span[text()="进入协同智造平台"]']
+    index: ~
+    text: ~
+    sleep: 3

@@ -1,0 +1,13 @@
+database:
+  host: 47.103.126.208
+  port: 3306
+  user: wcp_32
+  password: "123456"
+  charset: utf8
+  database: studentsDB
+base_redis:
+  host: 172.23.155.184
+  port: 30120
+  password: S7QZvcAvd
+  code_key_name: RedisCache:sms-gw:verificationCode
+  static_code_value: 123456

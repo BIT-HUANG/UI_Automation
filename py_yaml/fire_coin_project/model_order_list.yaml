@@ -1,0 +1,6 @@
+get_fire_coin_payment_success:
+  - action: find
+    locator: [ "XPATH", '//span[text()="支付成功"]' ]
+    index: ~
+    text: ~
+    sleep: 1

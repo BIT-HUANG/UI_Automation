@@ -1,0 +1,12 @@
+ordinary_VAT_invoice:
+  - action: find_and_click
+    locator: [ "XPATH", '//span[text()="增值税普通发票"]/parent::label' ]
+    index: ~
+    text: ~
+    sleep: 2
+click_submit_order:
+  - action: find_and_click
+    locator: [ "XPATH", '//button[@class="ant-btn ant-btn-primary"]' ]
+    index: ~
+    text: ~
+    sleep: 2

@@ -1,0 +1,136 @@
+get_order_list_tile:
+  - action: find
+    locator: [ "xpath", '//div[text()="订单列表 "]' ]
+    index: ~
+    text: ~
+    sleep: 1
+click_cabinet_order_number:
+  - action: find_and_click
+    locator: [ "xpath", '//span[@class="text-copy sc-copy-box"]/span[contains(text(),"skycore_order")]' ]
+    index: ~
+    text: ~
+    sleep: 1
+upload_contract_seller:
+  - action: scroll_page2
+    locator: ['xpath','//span[text()="基本信息"]']  # 这里，你滑动的起点在哪里要写上
+    index: [ 0,1000 ]
+    text: ~
+    sleep: 1
+  - action: move_to_ele
+    locator: [ "XPATH",'//span[text()="合同信息"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: find_and_click
+    locator: [ "XPATH",'//span[text()="上传合同"]' ]
+    index: ~
+    text: ~
+    sleep: 3
+contract_path:
+  - action: finds_and_send
+    locator: [ "xpath",'//input[@type="file"]' ]
+    index: 0
+    text: project_path/test_01.pdf
+    sleep: 1
+  - action: finds_and_click
+    locator: [ "xpath",'//span[text()="确 定"]' ]
+    index: 0
+    text: ~
+    sleep: 1
+get_upload_contract_success_mes:
+  - action: find
+    locator: [ "xpath",'//span[contains(text(),"操作成功")]' ]
+    index: ~
+    text: ~
+    sleep: ~
+order_return_draft_and_change_info_examine_pass:
+  - action: move_to_ele
+    locator: [ "xpath",'//span[text()="更 多"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: find_and_click
+    locator: [ "xpath",'//span[text()="退回草稿"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: scroll_page2
+    locator: [ "xpath",'//span[text()="变更记录"]' ]
+    index: [0,-1000]
+    text: ~
+    sleep: 1
+  - action: finds_and_click
+    locator: [ "xpath",'//div[@class="ant-row ant-form-item sc-text-form sc-form-is-single sc-form-InputNumber sc-col-item sc-col-item-2"]//div[@class="sc-form-item-width sc-text-field sc-single-edit"]' ]
+    index: -1
+    text: ~
+    sleep: 1
+  - action: keyboard_backspace
+    locator: [ "xpath",'//input[@class="ant-input-number-input"]' ]
+    index: ~
+    text: 4
+    sleep: 1
+  - action: finds_and_send
+    locator: [ "xpath",'//input[@class="ant-input-number-input"]' ]
+    index: -1
+    text: 200
+    sleep: 1
+#  - action: finds_and_click
+#    locator: [ "xpath",'//div[@class="single-edit-buttons"]/div' ]
+#    index: 0
+#    text: ~
+#    sleep: 1
+  - action: find_and_click
+    locator: [ "xpath",'//span[@class="text-copy sc-copy-box"]/span[contains(text(),"机柜")]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: find_and_click
+    locator: [ "xpath",'//button[@class="ant-btn ant-btn-link"]/span[text()="编辑"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: move_to_ele
+    locator: [ "xpath",'//span[@class="basic-grid-tree-node-cell"]/span[contains(text(),"机柜")]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: finds_and_click
+    locator: [ "xpath",'//div[@class="ag-pinned-right-cols-container"]//span[@class="cell-style"]' ]
+    index: 1
+    text: ~
+    sleep: ~
+  - action: finds_and_click
+    locator: [ "xpath",'//button[@class="ant-btn ant-btn-text more-btn-col sc-button"]' ]
+    index: 0
+    text: ~
+    sleep: ~
+  - action: find_and_click
+    locator: [ "xpath",'//input[@id="(800+600+800)"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: find_and_click
+    locator: [ "xpath",'//span[text()="添 加"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: find_and_click
+    locator: [ "xpath",'//span[text()="完成设计"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: find_and_click
+    locator: [ "xpath",'//span[text()="生成M-BOM"]' ]
+    index: ~
+    text: ~
+    sleep: 1
+  - action: finds_and_click
+    locator: [ "xpath",'//button[@aria-label="Close"]/span' ]
+    index: 1
+    text: ~
+    sleep: 1
+#  - action: find_and_click
+#    locator: [ "xpath",'//span[text()="提交订单"]' ]
+#    index: 0
+#    text: ~
+#    sleep: 1
